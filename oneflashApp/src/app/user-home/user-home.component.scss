@@ -1,0 +1,48 @@
+.contain {
+    height: 100vh;
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+select {
+    margin: 0 auto;
+    color: #EC6F66;
+    width: 310px;
+    height: 25px;
+    cursor: pointer;
+    background: url(http://sharpik.com/wip/cuteselect/arrow.png) 295px 12px no-repeat white;
+}
+
+select:hover {
+    background-color: transparent;
+}
+
+select option {
+    color: gray;
+    width: 310px;
+    height: 20px;
+    cursor: pointer;
+}
+
+select option:hover {
+    padding-left: 25px;
+    width: 270px;
+    color: #EC6F66;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.font {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

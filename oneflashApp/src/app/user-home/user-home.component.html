@@ -1,0 +1,32 @@
+<div class="user">
+    <div class="header">
+        <h1>OneFlash User</h1>
+    </div>
+    <div class="select">
+        <select (change)="onChange(($any($event.target).value))">
+    <option *ngFor="let color of colors" [value]="color.value">{{color.name}}</option>
+    </select>
+
+        <select (change)="onChangeFont(($any($event.target).value))">
+    <option *ngFor="let font of fonts" [value]="font.value">{{font.name}}</option>
+    </select>
+
+        <select (change)="onChangeColorFont(($any($event.target).value))">
+    <option *ngFor="let colorfont of colorfonts" [value]="colorfont.value">{{colorfont.name}}</option>
+    </select>
+    </div>
+
+
+
+    <div class="contain" [ngStyle]="{'background-color':selectedColor}">
+        <div class="font" [ngStyle]="{'font-family':selectedFont}">
+            <p [ngStyle]="{'color':selectedColorFont}">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde consequuntur velit, fugiat eligendi quis distinctio reiciendis obcaecati corrupti in sit accusamus sint perspiciatis voluptate tenetur doloribus numquam nemo iusto quae? Tenetur rerum earum,
+                voluptates esse pariatur iusto fugiat quo aliquid, tempore dolor possimus natus obcaecati adipisci illo minima doloribus aspernatur architecto voluptate delectus eveniet cupiditate reprehenderit nihil. Porro, maiores similique! Illum ratione
+                temporibus enim suscipit, fugit amet cupiditate ex a, deleniti deserunt optio. Distinctio vitae eaque mollitia adipisci temporibus velit praesentium eos voluptatum odio ex consectetur, corporis placeat cumque reprehenderit. Assumenda aliquam
+                est rerum dolores reprehenderit aperiam tenetur quas recusandae voluptatem architecto. Commodi tenetur animi reiciendis a, quidem, sed minima delectus odit eaque quasi, nulla in beatae repudiandae corrupti necessitatibus?
+            </p>
+        </div>
+    </div>
+
+</div>
